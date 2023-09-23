@@ -1,0 +1,52 @@
+.container{
+    height:calc( 100vh - 100px);
+    display:flex;
+    background-color:#444;
+    
+}
+.item{
+    position:relative;
+    flex:1;
+    display:flex;
+}
+.item:last-child{
+    flex:2;
+    padding:60px;
+    justify-content: space-between;
+}
+.card{
+    flex:1;
+    padding:0 20px;
+}
+.title{
+    font-size: 18px;
+    color:#b7903c
+}
+.text{
+    font-size: 18px;
+    color:lightgray;
+}
+.motto{
+    color:rgb(211, 211, 211)
+}
+@media screen and (max-width : 480px){
+    .item:first-child{
+        display:none;
+    }
+    .item:last-child{
+    
+        flex-direction: column;
+    }
+    .container{
+        text-align: center;
+        height:auto;
+       
+    }
+    .title{
+        padding-top: 20px;
+        font-size: 30px;
+    }
+    .text{
+        font-size: 20px;
+    }
+}

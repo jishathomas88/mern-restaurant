@@ -53,7 +53,7 @@ export const getServerSideProps=async (ctx) =>{
   }
   
 //const res=await axios.get("http://localhost:3000/api/products")
-const res=await axios.get("https://mern-restaurant-kappa.vercel.app/api/products")
+const res=await axios.get("https://mern-restaurant-hxmckc5tf-jishathomas88.vercel.app/api/products")
 return{
   props: {
     pizzaList:res.data,

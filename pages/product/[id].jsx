@@ -99,7 +99,7 @@ export default Product
 
 export const getServerSideProps=async ({params})=>{
     
-    const res=await axios.get(`mern-restaurant-j2h6.vercel.app/api/products/${params.id}`)
+    const res=await axios.get(`http://mern-restaurant-j2h6.vercel.app/api/products/${params.id}`)
     return{
         props: {
           pizza:res.data

@@ -10,7 +10,7 @@ function index({products,orders}) {
   const status=['preparing','on the way','delivered']
   const handleDelete=async (id)=>{
     try{
-    const res=await axios.delete("http://localhost:3000/api/products/"+id);
+    const res=await axios.delete("https://mern-restaurant-j2h6.vercel.app/api/products/"+id);
     setPizzaList(pizzaList.filter((pizza)=>pizza._id !== id))
     }catch(err){
       console.log(err)
@@ -21,7 +21,7 @@ function index({products,orders}) {
     const currentStatus=item.status + 1;
     console.log(currentStatus)
     try{
-      const res=await axios.put("http://localhost:3000/api/orders/"+id, {
+      const res=await axios.put("https://mern-restaurant-j2h6.vercel.app/api/orders/"+id, {
         status: currentStatus 
       });
       console.log(res);

@@ -11,7 +11,7 @@ function login() {
     const router=useRouter();
     const handleClick=async()=>{
         try{
-            await axios.post("http://mern-restaurant-j2h6.vercel.app/api/login",{
+            await axios.post("https://mern-restaurant-j2h6.vercel.app/api/login",{
                 username,
                 password
              })

@@ -117,8 +117,8 @@ export const getServerSideProps=async (ctx)=>{
       }
     }
   }
-  const productsRes=await axios.get("http://mern-restaurant-j2h6.vercel.app/api/products")
-  const ordersRes=await axios.get("http://mern-restaurant-j2h6.vercel.app/api/orders")
+  const productsRes=await axios.get("https://mern-restaurant-j2h6.vercel.app/api/products")
+  const ordersRes=await axios.get("https://mern-restaurant-j2h6.vercel.app/api/orders")
   return{
     props:{
       products:productsRes.data,
